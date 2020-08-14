@@ -1,0 +1,12 @@
+development:
+  store: production:{SHOP_URL}.myshopify.com
+  password: shppa_123
+  theme_id: "1234"
+  ignore_files:
+  - config/settings_data.json
+production:
+  store: {SHOP_URL}.myshopify.com
+  password: shppa_123
+  theme_id: "1235"
+  ignore_files:
+  - config/settings_data.json
