@@ -7,6 +7,7 @@ This repo is a basic structure for [shopify](https://www.shopify.de/) projects w
     - `store`: Your store’s Shopify domain with the `.myshopify.com` postfix. Please see the [setup docs](https://shopify.github.io/themekit/#get-api-access) on how to get this value.
     - `password`: Your API password. Please see the [setup docs](https://shopify.github.io/themekit/#get-api-access) on how to get this value.
     - `theme_id`: The theme that you want the command to take effect on. Please see the [setup docs](https://shopify.github.io/themekit/#get-api-access) on how to get this value.
+    - `ignore_files`: If you use a Linux you have to change the backslash (\\) to a slash (/).
 3. Get the theme. (Console command `theme get`)
 4. Create a file, that will be the trigger, to update your browser. (e.g. `project-path/theme.update`)
 5. Change in the `bs-config.js` file.
@@ -34,9 +35,9 @@ This repo is a basic structure for [shopify](https://www.shopify.de/) projects w
 
 # Commands
 
-`theme get` Download the dev theme. Ignore the `config/settings_data.json` file.
+`theme get` Download the dev theme. Ignore the `config\settings_data.json` file.
 
-`theme download config/settings_data.json --no-ignore` Downloading `config/settings_data.json` witch can only modify online by the theme configurator.
+`theme download config\settings_data.json --no-ignore` Downloading `config\settings_data.json` witch can only modify online by the theme configurator.
 
 `theme deploy` Upload theme to the dev theme.
 
